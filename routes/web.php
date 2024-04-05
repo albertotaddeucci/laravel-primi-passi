@@ -41,7 +41,7 @@ Route::get('/games', function () {
 
 
     return view('games');
-})->name('game');
+})->name('partite');
 
 Route::get('/staff', function () {
 
