@@ -15,6 +15,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+    $players = [
+        "Charles Barkley",
+        "Larry Bird",
+        "Clyde Drexler",
+        "Patrick Ewing",
+        "Magic Johnson",
+        "Michael Jordan",
+        "Christian Laettner",
+        "Karl Malone",
+        "Chris Mullin",
+        "Scottie Pippen",
+        "David Robinson",
+        "John Stockton"
 
-    return view('home');
+    ];
+
+
+
+
+    return view('home', compact("players"));
 });

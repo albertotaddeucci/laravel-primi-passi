@@ -12,7 +12,23 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center mt-5">Hello world!</h1>
+        <h1 class="text-center mt-5">Dream team '92</h1>
+        <hr>
+
+
+        <div class="row justify-content-center pt-5">
+            <div class="col-auto">
+                <h2>Formazione:</h2>
+                <ul class="list-group pt-3">
+                    @foreach($players as $player)
+                    <li class="list-group-item list-group-item-action">
+                        {{$player}}
+                    </li>
+                    @endforeach
+                </ul>
+
+            </div>
+        </div>
 
     </div>
 
